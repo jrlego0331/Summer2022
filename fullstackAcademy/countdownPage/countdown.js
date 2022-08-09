@@ -3,7 +3,7 @@ let timeUpMessage = "TIMES UP!"
         if(currenttime.innerText != timeUpMessage){
             if(currenttime.innerText == 0){
                 currenttime.innerText = timeUpMessage
-                currenttime.id = "URGENT"
+                currenttime.className = "URGENT"
             }
             else{
                 currenttime.innerText -= 1
