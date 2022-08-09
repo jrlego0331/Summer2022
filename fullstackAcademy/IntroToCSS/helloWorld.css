@@ -1,0 +1,10 @@
+#important_shit{
+    font-weight: bold;
+}
+#large_shit{
+    font-size: large;
+}
+.red{
+    color: red;
+}
+/* hiarachy exists id>class, if same later wins
