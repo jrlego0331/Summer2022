@@ -1,0 +1,19 @@
+#title{
+    text-align: center;
+    font-weight: bolder;
+    color: red;
+    font-size: 30px;
+}
+#timer{
+    text-align: center;
+    font-weight: normal;
+    color: black;
+    font-size: 100px;
+}
+
+#URGENT{
+    font-weight: bolder;
+    color: red;
+    font-size: 100px;
+    text-align: center;
+}
