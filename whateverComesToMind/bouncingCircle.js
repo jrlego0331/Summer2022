@@ -1,12 +1,18 @@
+/*
+modify circle creation meathod
+better obj to obj collision thatn ds*-1
+*/
+
 //html link
 let canvas = document.querySelector('#bouncingCircle > canvas');
 canvas.width = window.innerWidth-20;
-canvas.height = window.innerHeight-10;
+canvas.height = window.innerHeight-15;
 const ctx = canvas.getContext('2d');
 
 //math & physics func
 function random(min, max){return Math.round((max-min) * Math.random() + min);}
 function absDisplacement(x1, y1, x2, y2){return ((x2-x1)**2+(y2-y1)**2)**0.5;}
+function deltaTheta(x1, y1, x2, y2){return Math.atan((x2-x1)/(y2-y1))}
 
 //obj funcs
 function circle(mass, s_x, s_y, ds_x, ds_y, dds_x, dds_y, r, col){
@@ -36,15 +42,13 @@ function circle(mass, s_x, s_y, ds_x, ds_y, dds_x, dds_y, r, col){
         //other circle collision
         for(let i=0; i<circleList.length; i++){
             if(this!=circleList[i]){
-                /*
-                if(Math.abs(this.property.s.x-circleList[i].property.s.x) <= this.property.r+circleList[i].property.r && Math.abs(this.property.s.y-circleList[i].property.s.y) <= this.property.r+circleList[i].property.r){
-                    this.property.ds.x *= -1;
-                    this.property.ds.y *= -1;
-                }
-                */
                 if(absDisplacement(this.property.s.x, this.property.s.y, circleList[i].property.s.x, circleList[i].property.s.y) <= this.property.r+circleList[i].property.r){
-                    this.property.ds.x *= -1;
-                    this.property.ds.y *= -1;
+                    this.property.ds.x*=-1
+                    this.property.ds.y*=-1
+                    /*
+                    this.property.ds.x = 1/(Math.tan(deltaTheta(this.property.s.x, this.property.s.y, circleList[i].property.s.x, circleList[i].property.s.y)+Math.PI) / this.property.ds.x );
+                    this.property.ds.y *= Math.tan(deltaTheta(this.property.s.x, this.property.s.y, circleList[i].property.s.x, circleList[i].property.s.y)+Math.PI);
+                    */
                 }
             }
         }
