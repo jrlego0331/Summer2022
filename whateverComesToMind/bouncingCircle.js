@@ -1,7 +1,7 @@
 //html link
 let canvas = document.querySelector('#bouncingCircle > canvas');
 canvas.width = window.innerWidth-20;
-canvas.height = window.innerHeight-15;
+canvas.height = window.innerHeight-10;
 const ctx = canvas.getContext('2d');
 
 //math & physics func
