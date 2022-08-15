@@ -1,9 +1,9 @@
 .main{
     background-color: black;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
 }
 
 #mainCanvas{
-    border: 5px white solid;
+    border: 1px white solid;
 }
