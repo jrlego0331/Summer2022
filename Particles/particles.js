@@ -93,12 +93,12 @@ function objUpdate(){
 }
 
 //constant init
-radius = 5.0
+radius = 15
 param={
-    objCount: 4,
+    objCount: 2,
     decimal: 2,
     radius: radius, 
-    mass: {min:10, max: 10},
+    mass: {min:20, max: 20},
     s: {
         x: {min: radius, max: width-radius}, 
         y: {min: radius, max: height-radius}
