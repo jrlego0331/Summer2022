@@ -1,7 +1,18 @@
 body{
-    background-color: black;
+    background-color: rgb(0,0,0);
     margin: 0px;
+    padding: 0px;
 }
-#bouncingCircle{
-    border: 1px solid white;
+.module{
+    border: 1
+    px solid rgb(255,255,255);
+}
+.moduleName{
+    border: 1px solid rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(1, 200, 255);
 }
