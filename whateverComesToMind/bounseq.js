@@ -3,9 +3,9 @@ memos
 */
 
 //html link
-let canvas = document.querySelector('#stepSequencer > canvas');
-canvas.width = window.innerWidth-10;
-canvas.height = window.innerHeight/2;
+let canvas = document.querySelector('#bounseq > canvas');
+canvas.width = (window.innerWidth-20)/2;
+canvas.height = 2*(window.innerHeight-35)/2;
 const ctx = canvas.getContext('2d');
 
 //buttonFuncs
