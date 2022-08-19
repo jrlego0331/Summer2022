@@ -6,12 +6,3 @@ body{
 .module{
     border: 1px solid rgb(255,255,255);
 }
-.moduleName{
-    border: 1px solid rgb(255,255,255);
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 900;
-    float: left;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(80, 240, 255);
-}
