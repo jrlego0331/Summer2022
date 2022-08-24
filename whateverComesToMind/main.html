@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="./generalStyle.css">
     <script src="./funcs.js"></script>
     <script>
-        display={width:window.innerWidth-2, height:window.innerHeight-6}
+        const display={width:window.innerWidth-2, height:window.innerHeight-6};
+        const audioCtx=new window.AudioContext;
     </script>   
 </head>
 
 <body>
     <div>
-        <canvas id="emptyModule" class="module" ></canvas>
-        <script src="./emptyModule.js"></script>
+        <span>
+            <canvas id="emptyModule" class="module" ></canvas>
+            <script src="./emptyModule.js"></script>
+        </span>
+
+        <span>
+            <canvas id="oscilloscope" class="module" ></canvas>
+            <script src="./oscilloscope.js"></script>
+        </span>
     </div>
 </body>
 </html>

@@ -23,3 +23,13 @@ function draw(canvas, ctx){
         ctx.stroke();
     }
 }
+
+function oscillator(){
+    this.create = function(type, hz){
+        newOsc = audioCtx.createOscillator();
+        newOsc.type(type);
+        newOsc.frequency.setValueAtTime(hz, audioCtx.currentTime);
+        newOsc.connect(audioCtx.destination);
+        return newOsc;
+    }
+}
